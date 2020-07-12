@@ -730,7 +730,7 @@ class _GetItImplementation implements GetIt {
         StateError(
             'There is no type ${instance.runtimeType} registered as LazySingleton in GetIt'));
     instanceFactory.instance = null;
-    instanceFactory.pendingResult == null;
+    instanceFactory.pendingResult = null;
     instanceFactory._readyCompleter = Completer();
 
     if (instanceFactory.instance != null) {
